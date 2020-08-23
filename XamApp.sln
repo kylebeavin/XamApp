@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamApp.iOS", "XamApp\XamApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamApp.UWP", "XamApp\XamApp.UWP\XamApp.UWP.csproj", "{89F4EDEB-DF00-4A5E-8194-14BC143A7BD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamApp", "XamApp\XamApp\XamApp.csproj", "{A57898B4-2CAF-4EE9-810E-FB144F7D8369}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamApp", "XamApp\XamApp\XamApp.csproj", "{A57898B4-2CAF-4EE9-810E-FB144F7D8369}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

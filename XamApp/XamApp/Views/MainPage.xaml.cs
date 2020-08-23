@@ -10,14 +10,14 @@ namespace XamApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : MasterDetailPage
     {
-        Dictionary<int, NavigationPage> MenuPages = new Dictionary<int, NavigationPage>();
+        Dictionary<int, Page> MenuPages = new Dictionary<int, Page>();
         public MainPage()
         {
             InitializeComponent();
-
+            
             MasterBehavior = MasterBehavior.Popover;
 
-            MenuPages.Add((int)MenuItemType.Browse, (NavigationPage)Detail);
+            MenuPages.Add((int)MenuItemType.Browse, Detail);
         }
 
         public async Task NavigateFromMenu(int id)
@@ -27,10 +27,13 @@ namespace XamApp.Views
                 switch (id)
                 {
                     case (int)MenuItemType.Browse:
-                        MenuPages.Add(id, new NavigationPage(new ItemsPage()));
+                        MenuPages.Add(id, new ItemsPage());
                         break;
                     case (int)MenuItemType.About:
-                        MenuPages.Add(id, new NavigationPage(new AboutPage()));
+                        MenuPages.Add(id, new AboutPage());
+                        break;
+                    case (int)MenuItemType.Test:
+                        MenuPages.Add(id, new TestPage());
                         break;
                 }
             }
