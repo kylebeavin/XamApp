@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+             xmlns:views="clr-namespace:XamApp.Views"  
+             Title = "Xaml Samples"  
+             x:Class="XamApp.Views.XamlSamplesPage"
+             BackgroundColor="#5D2B90">
+    <TabbedPage.Children>
+        <NavigationPage Title="Xaml1" Icon="Xamagon">
+            <x:Arguments>
+                <views:XamlPage1/>
+            </x:Arguments>
+        </NavigationPage>
+        <NavigationPage Title="Xaml2" Icon="Xamagon">
+            <x:Arguments>
+                <views:XamlPage2/>
+            </x:Arguments>
+        </NavigationPage>
+    </TabbedPage.Children>
+
+</TabbedPage>
+
+<!--<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamApp.Views.XamlSamplesPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>-->

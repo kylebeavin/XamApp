@@ -19,8 +19,8 @@ namespace XamApp.Views
             menuItems = new List<HomeMenuItem>
             {
                 new HomeMenuItem {Id = MenuItemType.Browse, Title="Browse" },
-                new HomeMenuItem {Id = MenuItemType.About, Title="About" },
-                new HomeMenuItem {Id = MenuItemType.Test, Title="Test"}
+                new HomeMenuItem {Id = MenuItemType.Test, Title="Test" },
+                new HomeMenuItem {Id = MenuItemType.XamlSamples, Title="XamlSamples" }
             };
 
             ListViewMenu.ItemsSource = menuItems;

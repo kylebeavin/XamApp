@@ -7,8 +7,8 @@ namespace XamApp.Models
     public enum MenuItemType
     {
         Browse,
-        About,
-        Test
+        Test,
+        XamlSamples
     }
     public class HomeMenuItem
     {

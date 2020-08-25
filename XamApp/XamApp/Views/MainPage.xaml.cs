@@ -29,11 +29,11 @@ namespace XamApp.Views
                     case (int)MenuItemType.Browse:
                         MenuPages.Add(id, new ItemsPage());
                         break;
-                    case (int)MenuItemType.About:
-                        MenuPages.Add(id, new AboutPage());
-                        break;
                     case (int)MenuItemType.Test:
                         MenuPages.Add(id, new TestPage());
+                        break;
+                    case (int)MenuItemType.XamlSamples:
+                        MenuPages.Add(id, new XamlSamplesPage());
                         break;
                 }
             }
