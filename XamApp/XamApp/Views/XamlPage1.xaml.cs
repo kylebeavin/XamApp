@@ -16,5 +16,17 @@ namespace XamApp.Views
         {
             InitializeComponent();
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            valueLabel.Text = e.NewValue.ToString("F3");
+            this.Opacity = (e.NewValue / 100);
+
+        }
     }
 }

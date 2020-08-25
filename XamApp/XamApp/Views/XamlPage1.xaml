@@ -3,6 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamApp.Views.XamlPage1">
     <ContentPage.Content>
+        <StackLayout Margin="0,50,0,0">
+            <Label x:Name="valueLabel"
+               Text="A simple Label"
+               Font="Large"
+               HorizontalOptions="End"
+               BackgroundColor="White"
+                   TextColor="Blue"
+                   FontAttributes="Bold"
+                   FontSize="Large"/>
+            
+            <Slider x:Name="mySlider"
+                    VerticalOptions="CenterAndExpand"
+                    ValueChanged="Slider_ValueChanged" Margin="0,-125,0,0" />
 
+            <Label Text="&#x201C;Hello, XAML!&#x201D;"
+               VerticalOptions="Center"
+               HorizontalTextAlignment="Center"
+               Rotation="-15"
+               IsVisible="true"
+               FontSize="Large"
+               FontAttributes="Bold"
+               TextColor="Blue"
+               BackgroundColor="White"/>
+
+            <Button Text="Click Me!"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="Button_Clicked" />
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
