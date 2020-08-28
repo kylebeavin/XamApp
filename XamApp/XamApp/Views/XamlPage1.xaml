@@ -1,26 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamApp.ViewModels"
              x:Class="XamApp.Views.XamlPage1">
+    <ContentPage.BindingContext>
+        <local:Xaml1ViewModel/>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout Margin="0,50,0,0">
+            <Entry Text="{Binding Name}"
+                   Placeholder="Name"/>
             <Label x:Name="valueLabel"
-               Text="A simple Label"
+               Text="{Binding DisplayName}"
                Font="Large"
                HorizontalOptions="End"
                BackgroundColor="White"
                    TextColor="Blue"
                    FontAttributes="Bold"
                    FontSize="Large"/>
-            
+
             <Slider x:Name="mySlider"
                     VerticalOptions="CenterAndExpand"
-                    ValueChanged="Slider_ValueChanged" Margin="0,-125,0,0" />
+                    Maximum="360"/>
 
-            <Label Text="&#x201C;Hello, XAML!&#x201D;"
+            <Label BindingContext="{x:Reference mySlider}"
+                Text="&#x201C;Hello, XAML!&#x201D;"
                VerticalOptions="Center"
                HorizontalTextAlignment="Center"
-               Rotation="-15"
+               Rotation="{Binding Path=Value}"
                IsVisible="true"
                FontSize="Large"
                FontAttributes="Bold"
