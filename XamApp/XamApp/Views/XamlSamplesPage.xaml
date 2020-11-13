@@ -4,7 +4,7 @@
              xmlns:views="clr-namespace:XamApp.Views"  
              Title = "Xaml Samples"  
              x:Class="XamApp.Views.XamlSamplesPage"
-             BackgroundColor="#5D2B90">
+             BarBackgroundColor="#5D2B90">
     <TabbedPage.Children>
         <NavigationPage Title="Xaml1" Icon="Xamagon">
             <x:Arguments>

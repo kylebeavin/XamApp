@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
              xmlns:views="clr-namespace:XamApp.Views"  
              Title = "Wish List"  
-             x:Class="XamApp.Views.TestPage" BackgroundColor="#5D2B90">
+             x:Class="XamApp.Views.TestPage" 
+             BackgroundColor="#5D2B90"
+             BarBackgroundColor="#5D2B90">
     <TabbedPage.Children>
         <NavigationPage Title="Wish List" Icon="games">
             <x:Arguments>

@@ -79,4 +79,6 @@
                            ControlTemplate="{StaticResource CardViewControlTemplate}" />-->
     </StackLayout>
 
+    <Button Text="Click" Clicked="Button_Clicked">
+    </Button>
 </ContentPage>

@@ -4,17 +4,70 @@
              x:Class="XamApp.Views.XamlPage2"
              Title="XAML + Code Page">
     <ContentPage.Content>
-        <StackLayout>
-            <Slider VerticalOptions="CenterAndExpand" />
+        <Frame Padding="0" Margin="25,25,25,25" HorizontalOptions="FillAndExpand" OutlineColor="#00000088" HasShadow="true">
+            <StackLayout BackgroundColor="White"
+                     Margin="25,25,25,25" >
+                <Slider VerticalOptions="CenterAndExpand"
+                    BackgroundColor="LightGray" />
 
-            <Label Text="A simple Label"
-               Font="Large"
-               HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand" />
+                <Label Text="A simple Label"
+                   Font="Large"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
 
-            <Button Text="Click Me!"
-                HorizontalOptions="Center"
-                VerticalOptions="CenterAndExpand" />
-        </StackLayout>
+                <Button Text="Click Me!"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" />
+               
+                <Slider VerticalOptions="CenterAndExpand"
+                    BackgroundColor="LightGray" />
+
+                <Label Text="A simple Label"
+                   Font="Large"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+
+                <Button Text="Click Me!"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" />
+                
+                <Slider VerticalOptions="CenterAndExpand"
+                    BackgroundColor="LightGray" />
+
+                <Label Text="A simple Label"
+                   Font="Large"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+
+                <Button Text="Click Me!"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" />
+                
+                <Slider VerticalOptions="CenterAndExpand"
+                    BackgroundColor="LightGray" />
+
+                <Label Text="A simple Label"
+                    Font="Large"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" />
+
+                <Button Text="Click Me!"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" />
+                
+                <Slider VerticalOptions="CenterAndExpand"
+                    BackgroundColor="LightGray" />
+
+                <Label Text="A simple Label"
+                   Font="Large"
+                   HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand" />
+
+                <Button Text="Click Me!"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" />
+                
+            </StackLayout>
+        </Frame>
     </ContentPage.Content>
 </ContentPage>
